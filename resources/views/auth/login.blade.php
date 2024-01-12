@@ -9,7 +9,6 @@
   <meta content="" name="description">
   <meta content="" name="keywords">
 
-  <!-- Favicons -->
   <link href="{{asset('assets/img/logo-white-1.png')}}" rel="icon">
   <link href="{{asset('assets/img/apple-touch-icon.png')}}" rel="apple-touch-icon">
 
@@ -17,7 +16,6 @@
   <link href="https://fonts.gstatic.com" rel="preconnect">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
-  <!-- Vendor CSS Files -->
   <link href="{{asset('/assets/vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
   <link href="{{asset('/assets/vendor/bootstrap-icons/bootstrap-icons.css')}}" rel="stylesheet">
   <link href="{{asset('/assets/vendor/boxicons/css/boxicons.min.css')}}" rel="stylesheet">
@@ -26,7 +24,6 @@
   <link href="{{asset('/assets/vendor/remixicon/remixicon.css')}}" rel="stylesheet">
   <link href="{{asset('/assets/vendor/simple-datatables/style.css')}}" rel="stylesheet">
 
-  <!-- Template Main CSS File -->
   <link href="{{asset('/assets/css/style.css')}}" rel="stylesheet">
 </head>
 
@@ -57,15 +54,12 @@
                     <div class="col-12">
                       <div class="form-group ">
                         <a href="{{route('login.google')}}" class="btn btn-danger btn-block" style="width:100%;">Login with Google</a>
-                        <br><br><a href="{{route('login.github')}}" class="btn btn-info btn-block" style="width:100%;">Login with Github</a>
                       </div>
                     </div>
                     <div class="col-12">
                       <label for="yourEmail" class="form-label">Email</label>
                       <div class="input-group has-validation">
-                        <!-- <span class="input-group-text" id="inputGroupPrepend">@</span> -->
                         <input type="email" name="email" class="form-control" id="yourEmail" required>
-                        <!-- <div class="invalid-feedback">Please enter your username.</div> -->
                       </div>
                     </div>
 

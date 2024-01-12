@@ -30,15 +30,15 @@ class LoginController extends Controller
 
     }
     
-    public function redirectToGithub(){
-        return Socialite::driver('github')->redirect();
-    }
-    public function handleGithubCallback(){
-        $user = Socialite::driver('github')->user();
+    // public function redirectToGithub(){
+    //     return Socialite::driver('github')->redirect();
+    // }
+    // public function handleGithubCallback(){
+    //     $user = Socialite::driver('github')->user();
 
-        $this->_registerOrLoginUser($user);
-        return redirect()->route('home');
-    }
+    //     $this->_registerOrLoginUser($user);
+    //     return redirect()->route('home');
+    // }
 
     protected function _registerOrLoginUser($data){
         $user = User::where('email', '=', $data->email)->first();

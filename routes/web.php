@@ -33,8 +33,8 @@ Route::post('login', [AuthController::class, 'auth_login'])->name('auth_login');
 Route::get('login/google', [LoginController::class, 'redirectToGoogle'])->name('login.google');
 Route::get('login/google/callback', [LoginController::class, 'handleGoogleCallback'])->name('handleGoogleCallback');
 
-Route::get('login/github', [LoginController::class, 'redirectToGithub'])->name('login.github');
-Route::get('login/github/callback', [LoginController::class, 'handleGithubCallback'])->name('handleGithubCallback');
+// Route::get('login/github', [LoginController::class, 'redirectToGithub'])->name('login.github');
+// Route::get('login/github/callback', [LoginController::class, 'handleGithubCallback'])->name('handleGithubCallback');
 
 
 Route::get('register', [AuthController::class, 'register'])->name('register');
